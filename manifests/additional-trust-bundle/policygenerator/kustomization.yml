@@ -1,0 +1,7 @@
+generators:
+  - policygenerator.yml
+commonLabels:
+  manifest-group: additional-trust-bundle
+
+commonAnnotations:
+  argocd.argoproj.io/compare-options: IgnoreExtraneous

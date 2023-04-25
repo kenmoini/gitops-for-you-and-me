@@ -1,0 +1,10 @@
+---
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../../5-argocd/appProjects/
+  - 05_repo-externalsecret.yml
+  - 05_reposecret.yml
+  - 10_hub-cluster-apps.yml
