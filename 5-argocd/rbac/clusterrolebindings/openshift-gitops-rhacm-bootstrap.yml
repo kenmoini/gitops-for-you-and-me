@@ -26,4 +26,5 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
   #name: open-cluster-management:managedclusterset:admin:default
-  name: open-cluster-management:multicloud-operators-subscription:multicluster-applications
+  #name: open-cluster-management:multicloud-operators-subscription:multicluster-applications
+  name: multicluster-engine:cluster-lifecycle:admin-aggregate
