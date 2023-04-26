@@ -17,3 +17,4 @@ rules:
       - "operator.open-cluster-management.io"
     resources:
       - multiclusterhubs
+      - managedclustersets
