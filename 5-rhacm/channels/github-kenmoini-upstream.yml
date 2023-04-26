@@ -24,3 +24,5 @@ spec:
   type: GitHub
   pathname: 'https://github.com/kenmoini/gitops-for-me-and-you.git'
   insecureSkipVerify: true
+  secretRef:
+    name: rhacm-channel-auth
