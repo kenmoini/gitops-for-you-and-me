@@ -6,3 +6,4 @@ kind: Kustomization
 resources:
   - openshift-gitops-app-deployments.yml
   - openshift-gitops-rhacm-bootstrap.yml
+  - openshift-gitops-external-secrets.yml
