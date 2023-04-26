@@ -28,6 +28,7 @@ rules:
     apiGroups:
       - "cluster.open-cluster-management.io"
       - "clusterview.open-cluster-management.io"
+      - "register.open-cluster-management.io"
     resources:
       - managedclusters
       - managedclustersets
