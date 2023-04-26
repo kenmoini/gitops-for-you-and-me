@@ -10,6 +10,6 @@ resources:
 - rhacm-channels
 - rhacm-policies
 - rhacm-applications
+- external-secrets
 #- rhacm-observability
-#- external-secrets
 #- sealedsecrets-chart-installed
