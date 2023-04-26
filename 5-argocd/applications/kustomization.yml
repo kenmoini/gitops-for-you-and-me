@@ -6,10 +6,10 @@ resources:
 - reflector-chart-installed
 - install-rhacm-operator
 - deploy-rhacm-hub
-#- external-secrets
-#- hoh-rhacm-base-config
+- hoh-rhacm-base-config
 #- rhacm-applications
 #- rhacm-channels
 #- rhacm-observability
 #- rhacm-policies
+#- external-secrets
 #- sealedsecrets-chart-installed
