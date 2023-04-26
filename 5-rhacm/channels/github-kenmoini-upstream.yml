@@ -22,7 +22,7 @@ metadata:
   namespace: rhacm-channels
 spec:
   type: GitHub
-  pathname: 'https://github.com/kenmoini/gitops-for-me-and-you.git'
+  pathname: 'https://github.com/kenmoini/gitops-for-me-and-you'
   insecureSkipVerify: true
   secretRef:
     name: rhacm-channel-auth
