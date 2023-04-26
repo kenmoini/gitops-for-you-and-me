@@ -31,3 +31,9 @@ rules:
     resources:
       - managedclusters
       - managedclustersets
+  - apiGroups:
+    - apps.open-cluster-management.io
+    resources:
+    - '*'
+    verbs:
+    - '*'
