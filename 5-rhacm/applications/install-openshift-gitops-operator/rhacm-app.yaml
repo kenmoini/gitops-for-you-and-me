@@ -3,7 +3,7 @@ kind: Application
 metadata:
   annotations:
     argocd.argoproj.io/compare-options: IgnoreExtraneous
-  name: install-openshift-gitops-operator-policygenerator
+  name: install-gitops-operator-pg
   namespace: rhacm-applications
 spec:
   componentKinds:
@@ -14,7 +14,7 @@ spec:
       - key: app
         operator: In
         values:
-          - install-openshift-gitops-operator-policygenerator
+          - install-gitops-operator-pg
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
@@ -25,8 +25,8 @@ metadata:
     apps.open-cluster-management.io/git-path: 5-rhacm/policy-generators/install-openshift-gitops-operator
     apps.open-cluster-management.io/reconcile-option: merge
   labels:
-    app: install-openshift-gitops-operator-policygenerator
-  name: install-openshift-gitops-operator-policygenerator
+    app: install-gitops-operator-pg
+  name: install-gitops-operator-pg
   namespace: rhacm-applications
 spec:
   channel: rhacm-channels/ggithubcom-kenmoini-gitops-for-me-and-you
