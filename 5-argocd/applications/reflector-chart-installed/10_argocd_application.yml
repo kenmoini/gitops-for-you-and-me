@@ -26,5 +26,4 @@ spec:
     syncOptions:
       - CreateNamespace=true
   ignoreDifferences:
-    - group: ""
-      kind: Namespace
+    - kind: Namespace
