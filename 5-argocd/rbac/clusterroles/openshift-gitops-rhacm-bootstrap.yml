@@ -27,5 +27,7 @@ rules:
       - delete
     apiGroups:
       - "cluster.open-cluster-management.io"
+      - "clusterview.open-cluster-management.io"
     resources:
       - managedclustersets
+      - managedclusters
