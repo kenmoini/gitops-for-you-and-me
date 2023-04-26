@@ -7,9 +7,9 @@ resources:
 - install-rhacm-operator
 - deploy-rhacm-hub
 - hub-rhacm-base-config
-#- rhacm-applications
-#- rhacm-channels
-#- rhacm-observability
+- rhacm-channels
 #- rhacm-policies
+#- rhacm-applications
+#- rhacm-observability
 #- external-secrets
 #- sealedsecrets-chart-installed
