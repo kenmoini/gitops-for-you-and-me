@@ -29,5 +29,5 @@ rules:
       - "cluster.open-cluster-management.io"
       - "clusterview.open-cluster-management.io"
     resources:
-      - managedclustersets
       - managedclusters
+      - managedclustersets
