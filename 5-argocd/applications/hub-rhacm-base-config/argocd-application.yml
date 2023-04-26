@@ -16,7 +16,7 @@ spec:
     repoURL: 'https://github.com/kenmoini/gitops-for-you-and-me.git'
     targetRevision: HEAD
     ## Path is the repo directory that containers the cluster(s) configuration and deployment manifests
-    path: manifests/hoh-rhacm-base-config
+    path: manifests/hub-rhacm-base-config
     ## Enable recursive sub-directory search to enable management of multiple cluster from this single Application
     directory:
       recurse: true

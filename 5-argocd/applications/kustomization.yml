@@ -6,7 +6,7 @@ resources:
 - reflector-chart-installed
 - install-rhacm-operator
 - deploy-rhacm-hub
-- hoh-rhacm-base-config
+- hub-rhacm-base-config
 #- rhacm-applications
 #- rhacm-channels
 #- rhacm-observability
