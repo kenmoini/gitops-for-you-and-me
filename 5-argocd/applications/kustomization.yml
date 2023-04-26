@@ -9,7 +9,7 @@ resources:
 - hub-rhacm-base-config
 - rhacm-channels
 - rhacm-policies
-#- rhacm-applications
+- rhacm-applications
 #- rhacm-observability
 #- external-secrets
 #- sealedsecrets-chart-installed
