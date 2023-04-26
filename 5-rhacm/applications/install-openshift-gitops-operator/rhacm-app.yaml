@@ -33,4 +33,4 @@ spec:
   placement:
     placementRef:
       kind: PlacementRule
-      name: spoke-clusters
+      name: management-clusters
