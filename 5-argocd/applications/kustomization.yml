@@ -5,7 +5,7 @@ resources:
 - hub-argocd-rbac
 - reflector-chart-installed
 - install-rhacm-operator
-#- deploy-rhacm-hub
+- deploy-rhacm-hub
 #- external-secrets
 #- hoh-rhacm-base-config
 #- rhacm-applications
