@@ -21,6 +21,6 @@ metadata:
   name: ggithubcom-kenmoini-gitops-for-me-and-you
   namespace: rhacm-channels
 spec:
-  type: Git
+  type: GitHub
   pathname: 'https://github.com/kenmoini/gitops-for-me-and-you.git'
   insecureSkipVerify: true
