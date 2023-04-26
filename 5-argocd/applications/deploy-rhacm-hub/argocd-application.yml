@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: deploy-rhacm
+  namespace: openshift-gitops
+spec:
+  ignoreDifferences:
+    - group: "*"
+      kind: "*"
+      jsonPointers:
+        - /metadata/annotations
+  destination:
+    server: 'https://kubernetes.default.svc'
+  source:
+    kustomize:
+      version: v4.4.1
+    repoURL: 'https://github.com/kenmoini/gitops-for-you-and-me.git'
+    targetRevision: HEAD
+    ## Path is the repo directory that containers the cluster(s) configuration and deployment manifests
+    path: 5-rhacm/policy-generators/deploy-rhacm-hub/manifests
+    ## Enable recursive sub-directory search to enable management of multiple cluster from this single Application
+    #directory:
+    #  recurse: true
+  project: hub-cluster-apps
+  syncPolicy:
+    automated:
+      prune: true
+      allowEmpty: true
+      #selfHeal: false # overrides changes made on the cluster that drift from git state
+      
