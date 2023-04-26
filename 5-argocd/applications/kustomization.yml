@@ -8,7 +8,7 @@ resources:
 - deploy-rhacm-hub
 - hub-rhacm-base-config
 - rhacm-channels
-#- rhacm-policies
+- rhacm-policies
 #- rhacm-applications
 #- rhacm-observability
 #- external-secrets
