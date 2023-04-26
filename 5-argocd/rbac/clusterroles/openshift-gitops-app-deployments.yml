@@ -19,6 +19,7 @@ rules:
       - serviceaccounts
       - deployments
       - services
+      - configmaps
   - verbs:
       - get
       - list
