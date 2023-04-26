@@ -12,7 +12,7 @@ spec:
   source:
     repoURL: 'https://github.com/kenmoini/gitops-for-you-and-me'
     targetRevision: HEAD
-    path: 5-argocd/gitops-apps
+    path: 5-argocd/applications
     #directory:
     #  recurse: true
     kustomize:
