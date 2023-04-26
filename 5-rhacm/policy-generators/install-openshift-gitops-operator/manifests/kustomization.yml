@@ -7,5 +7,5 @@ resources:
   - 03_rbac.yml
   - 05_operatorgroup.yml
   - 10_subscription.yml
+  - ../../../../5-argocd/appProjects/
   #- ../../../../2-bootstrap-gitops/01_deploy-openshift-gitops/
-  #- ../../../../5-argocd/appProjects/
