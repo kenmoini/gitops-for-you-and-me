@@ -25,3 +25,6 @@ spec:
       # selfHeal: false # overrides changes made on the cluster that drift from git state
     syncOptions:
       - CreateNamespace=true
+  ignoreDifferences:
+    - group: ""
+      kind: Namespace
