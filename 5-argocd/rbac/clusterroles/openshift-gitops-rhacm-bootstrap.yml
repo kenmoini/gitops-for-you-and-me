@@ -1,0 +1,19 @@
+---
+# This openshift-gitops-policy-admin role is used by the GitOps operator to create policies
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: openshift-gitops-rhacm-bootstrap
+rules:
+  - verbs:
+      - get
+      - list
+      - watch
+      - create
+      - update
+      - patch
+      - delete
+    apiGroups:
+      - "operator.open-cluster-management.io"
+    resources:
+      - multiclusterhubs
