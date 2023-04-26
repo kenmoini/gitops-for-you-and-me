@@ -2,6 +2,8 @@
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
   name: 'system:openshift:scc:privileged'
   namespace: reflector
 subjects:
