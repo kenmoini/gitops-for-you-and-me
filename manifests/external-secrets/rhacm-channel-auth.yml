@@ -31,17 +31,36 @@ spec:
       data:
         user: "{{ .gitusername | toString }}"
         accessToken: "{{ .gitpassword | toString }}"
-    #template:
-    #  data:
-    #    config.yml: |
-    #      endpoints:
-    #      - https://{{ .data.user }}:{{ .data.password }}@api.exmaple.com
-    #  metadata:
-    #    annotations: {}
-    #    labels: {}
-    #  templateFrom:
-    #    - configMap:
-    #        items:
-    #          - key: alertmanager.yaml
-    #        name: alertmanager
-    #  type: kubernetes.io/dockerconfigjson
+---
+kind: ExternalSecret
+apiVersion: external-secrets.io/v1beta1
+metadata:
+  #annotations:
+    #acme.org/sha: 1234
+  #labels:
+    #acme.org/owned-by: q-team
+  name: rhacm-channel-auth
+  namespace: rhacm-applications
+spec:
+  refreshInterval: 10m
+  secretStoreRef:
+    kind: ClusterSecretStore
+    name: hub-vault
+  data:
+    - secretKey: gitusername
+      remoteRef:
+        key: hub-git-reader
+        property: git_username
+    - secretKey: gitpassword
+      remoteRef:
+        key: hub-git-reader
+        property: git_password
+  target:
+    creationPolicy: Owner
+    deletionPolicy: Retain
+    name: rhacm-channel-auth
+    template:
+      type: Opaque
+      data:
+        user: "{{ .gitusername | toString }}"
+        accessToken: "{{ .gitpassword | toString }}"
