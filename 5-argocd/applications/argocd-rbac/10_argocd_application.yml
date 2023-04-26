@@ -3,13 +3,13 @@ kind: Application
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "1"
-  name: argocd-rbac
+  name: hub-argocd-rbac
   namespace: openshift-gitops
 spec:
   destination:
     server: 'https://kubernetes.default.svc'
   source:
-    repoURL: 'https://github.com/kenmoini/gitops-for-you-and-me'
+    repoURL: 'https://github.com/kenmoini/gitops-for-you-and-me.git'
     targetRevision: HEAD
     path: 5-argocd/rbac
     #directory:

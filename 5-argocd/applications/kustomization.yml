@@ -4,10 +4,10 @@ kind: Kustomization
 resources:
 - argocd-rbac
 - reflector-chart-installed
+- install-rhacm-operator
 #- deploy-rhacm-hub
 #- external-secrets
 #- hoh-rhacm-base-config
-#- install-rhacm-operator
 #- rhacm-applications
 #- rhacm-channels
 #- rhacm-observability
