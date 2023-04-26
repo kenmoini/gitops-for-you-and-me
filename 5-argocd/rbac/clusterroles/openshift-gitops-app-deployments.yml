@@ -18,6 +18,7 @@ rules:
     resources:
       - serviceaccounts
       - deployments
+      - services
   - verbs:
       - get
       - list
@@ -30,3 +31,15 @@ rules:
       - "apps"
     resources:
       - deployments
+  - verbs:
+      - get
+      - list
+      - watch
+      - create
+      - update
+      - patch
+      - delete
+    apiGroups:
+      - "route.openshift.io"
+    resources:
+      - routes
